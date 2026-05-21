@@ -7,8 +7,8 @@ st.set_page_config(layout="wide")
 st.title("Longitud (km) por Categoría")
 
 # === CARGAR DATOS ==================================================
-## Datos cargados desde app.py
-
+url = 'data/datos_vias.csv'
+df = pd.read_csv(url)
 
 # === ANALISIS DE DATOS =============================================
 categoria = st.selectbox("Selecciona una categoría", df['categor_a'].sort_values().unique())

@@ -4,8 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # ===== CARGAR DATOS ================================================
-## Datos cargados desde app.py
-
+url = 'data/datos_vias.csv'
+df = pd.read_csv(url)
 # ===== ANÁLISIS DE DATOS ===========================================
 df_tipo = df[['escarpado', 'monta_oso', 'ondulado', 
               'pavimento_asfaltico', 'pavimento_r_gido', 'pavimento_articulado']]

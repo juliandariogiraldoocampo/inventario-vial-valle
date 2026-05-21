@@ -4,7 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # ==== CARGAR DATOS ==================================================
-## Datos cargados desde app.py
+url = 'data/datos_vias.csv'
+df = pd.read_csv(url)
 
 # ==== ANALISIS DE DATOS =================================================
 
